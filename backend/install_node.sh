@@ -4,13 +4,15 @@ echo instala extras da amazon ec2
 sudo amazon-linux-extras install -y epel
 
 echo coloca permissoes corretas em home
-chmod og+rX /home /home/ec2-user
+sudo chmod og+rX /home /home/ec2-user
 
 echo instala node
-curl -P ~/ -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh
-sudo ~/install.sh
-sudo ~/.nvm/nvm.sh
-sudo nvm install 14.17.3
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. ~/.nvm/nvm.sh
+nvm install 14.17.3
 
 echo instala dependencias do projeto
 npm install

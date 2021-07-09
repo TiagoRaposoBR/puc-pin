@@ -4,7 +4,7 @@ const sensor = require('./routes/sensorRoute');
 const telemetry = require('./routes/telemetryRoute');
 
 const express = require('express');
-const port = 3001;
+const port = 3000;
 const app = express();
 
 app.set('trust proxy', true);
