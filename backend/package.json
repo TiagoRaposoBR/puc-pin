@@ -1,0 +1,17 @@
+{
+  "name": "pucpin-backend",
+  "version": "1.0.0",
+  "description": "Backend do projeto Sensores Fazenda.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Tiago Raposo",
+  "license": "ISC",
+  "dependencies": {
+    "dateformat": "^4.5.1",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "pg": "^8.6.0"
+  }
+}

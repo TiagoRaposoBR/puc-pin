@@ -1,0 +1,11 @@
+[Unit]
+Description=API Sensores Fazenda
+
+[Service]
+Type=simple
+User=ec2-user
+ExecStart=/home/ec2-user/.nvm/versions/node/v14.17.3/bin/node /home/ec2-user/sensores-api/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
