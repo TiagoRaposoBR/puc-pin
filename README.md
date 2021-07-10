@@ -1,4 +1,4 @@
-# API Multiverso DC
+# Projeto Fazenda
 Servidores do Projeto Fazenda.
 
 Projeto para matéria Projeto Integrado, do curso de pós-graduação em Arquitetura de Sistemas Distribuídos da PUC Minas.
